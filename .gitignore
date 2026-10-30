@@ -1,0 +1,29 @@
+﻿.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# RAVDESS dataset - keep all audio files out of Git
+data/
+
+# Model artifacts
+models/*.keras
+
+# Generated outputs - explicitly include reviewed evidence
+outputs/*
+!outputs/README.md
+!outputs/all_models_comparison.csv
+!outputs/all_models_comparison.json
+!outputs/all_models_evaluation_run_695324b2e90a4af5b72034c5b95f5ebb.json
+!outputs/svm_classification_report_*.csv
+!outputs/accuracy_comparison.png
+!outputs/macro_f1_comparison.png
+!outputs/svm_confusion_matrix_*.png
+
+# Keep final experiment evidence; exclude temporary caches
+
+*.bak
+
+experiments/final_model_comparison/final_predictions.csv
+experiments/svm_rbf_tuning/final_test/predictions.csv

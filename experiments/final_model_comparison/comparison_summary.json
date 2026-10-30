@@ -1,0 +1,89 @@
+{
+  "provenance": {
+    "run_timestamp_utc": "2026-10-30T06:39:32.376760+00:00",
+    "test_manifest_sha256": "9481ae8073e24b49c85c64812151fe978c4b2c74481190900b2e182a196478c0",
+    "artifact_sha256": {
+      "svm_model": "0da5a6ba299d7de40de7eb9100185ba4c13c454590589b3fbb3a871c82b17d5a",
+      "svm_scaler": "b6c1f56c14956eaa302fbfe5d1303bdc5150880857c00dcfab571955d0e73b6a",
+      "svm_label_mapping": "ac12f5f9e5291ab560dc491474b0a07304b11269a765e72e0ee1fd926519cf5f",
+      "cnn_lstm_model": "c3086cc944010bb8e205ef20bc14b6abf69411c01d146cbd64ab7307c750216a",
+      "cnn_lstm_label_mapping": "c096967888a7a324fd04574fe408c31378701790458ecd1313df97684ae917f6",
+      "test_manifest": "9481ae8073e24b49c85c64812151fe978c4b2c74481190900b2e182a196478c0",
+      "actor_split": "4e62e70132df5438f46041ba248ee2f9fd817c772ed07a3e78346b27fe640485"
+    },
+    "actor_split": {
+      "train": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        12,
+        13,
+        14,
+        15,
+        21,
+        22,
+        23
+      ],
+      "validation": [
+        7,
+        8,
+        11,
+        18,
+        24
+      ],
+      "test": [
+        10,
+        16,
+        17,
+        19,
+        20
+      ]
+    },
+    "test_actor_counts": {
+      "10": 60,
+      "16": 60,
+      "17": 60,
+      "19": 60,
+      "20": 60
+    },
+    "test_record_count": 300,
+    "class_order": [
+      "angry",
+      "calm",
+      "disgust",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad",
+      "surprised"
+    ],
+    "software_versions": {
+      "python": "3.12.10",
+      "numpy": "2.0.2",
+      "pandas": "2.3.3",
+      "tensorflow": "2.18.1",
+      "matplotlib": "3.11.2",
+      "scikit_learn": "1.7.2",
+      "librosa": "0.11.0",
+      "joblib": "1.6.0"
+    },
+    "evaluation": "clean audio only; no augmentation, tuning, or retraining"
+  },
+  "correct_predictions": {
+    "svm_baseline": "141/300",
+    "improved_cnn_lstm": "55/300"
+  },
+  "accuracy": {
+    "svm_baseline": 0.47,
+    "improved_cnn_lstm": 0.18333333333333332
+  },
+  "macro_f1": {
+    "svm_baseline": 0.4556359440137682,
+    "improved_cnn_lstm": 0.16630446685639383
+  },
+  "warning": "Final held-out test results must not be used for tuning or checkpoint selection."
+}

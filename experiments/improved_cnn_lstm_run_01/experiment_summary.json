@@ -1,0 +1,119 @@
+{
+  "training_outcome": "completed",
+  "actor_split": {
+    "train": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      12,
+      13,
+      14,
+      15,
+      21,
+      22,
+      23
+    ],
+    "validation": [
+      7,
+      8,
+      11,
+      18,
+      24
+    ],
+    "test": [
+      10,
+      16,
+      17,
+      19,
+      20
+    ]
+  },
+  "actors_used": {
+    "training": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      12,
+      13,
+      14,
+      15,
+      21,
+      22,
+      23
+    ],
+    "validation": [
+      7,
+      8,
+      11,
+      18,
+      24
+    ]
+  },
+  "recording_counts": {
+    "training": 840,
+    "validation": 300
+  },
+  "label_mapping": {
+    "0": "angry",
+    "1": "calm",
+    "2": "disgust",
+    "3": "fearful",
+    "4": "happy",
+    "5": "neutral",
+    "6": "sad",
+    "7": "surprised"
+  },
+  "feature_configuration": {
+    "sample_rate_hz": 16000,
+    "mfcc_coefficients": 40,
+    "delta_orders": [
+      1,
+      2
+    ],
+    "feature_coefficients": 120,
+    "max_frames": 200,
+    "tensor_shape_per_recording": [
+      200,
+      120,
+      1
+    ]
+  },
+  "augmentation_configuration": {
+    "training_only": true,
+    "probability": 0.5,
+    "snr_min_db": 5.0,
+    "snr_max_db": 30.0
+  },
+  "training_configuration": {
+    "optimizer": "Adam",
+    "initial_learning_rate": 0.0005,
+    "loss": "sparse_categorical_crossentropy",
+    "batch_size": 16,
+    "maximum_epochs": 80,
+    "early_stopping_monitor": "val_loss",
+    "early_stopping_patience": 15,
+    "restore_best_weights": true,
+    "class_weight": "balanced",
+    "random_seed": 42
+  },
+  "best_epoch": 5,
+  "best_validation_loss": 1.9424850940704346,
+  "validation_accuracy_at_best_epoch": 0.23666666448116302,
+  "epochs_completed": 20,
+  "software_versions": {
+    "python": "3.12.10",
+    "tensorflow": "2.18.1",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "librosa": "0.11.0"
+  }
+}

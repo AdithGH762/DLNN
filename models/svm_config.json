@@ -1,0 +1,9 @@
+{
+  "best_C": 1.0,
+  "val_accuracy": 0.5,
+  "test_accuracy": 0.47,
+  "kernel": "rbf",
+  "class_weight": "balanced",
+  "feature": "mfcc_mean_std_min_max",
+  "feature_dim": 160
+}

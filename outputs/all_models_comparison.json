@@ -1,0 +1,54 @@
+[
+  {
+    "model":"SVM Baseline",
+    "model_key":"svm",
+    "condition":"clean",
+    "n_test_files":300,
+    "accuracy":0.47,
+    "macro_precision":0.4816994158,
+    "macro_recall":0.459375,
+    "macro_f1":0.455635944,
+    "run_id":"695324b2e90a4af5b72034c5b95f5ebb",
+    "accuracy_delta_vs_clean":0.0,
+    "macro_f1_delta_vs_clean":0.0
+  },
+  {
+    "model":"SVM Baseline",
+    "model_key":"svm",
+    "condition":"snr_20db",
+    "n_test_files":300,
+    "accuracy":0.2366666667,
+    "macro_precision":0.2826994377,
+    "macro_recall":0.221875,
+    "macro_f1":0.1778089693,
+    "run_id":"695324b2e90a4af5b72034c5b95f5ebb",
+    "accuracy_delta_vs_clean":-0.2333333333,
+    "macro_f1_delta_vs_clean":-0.2778269747
+  },
+  {
+    "model":"SVM Baseline",
+    "model_key":"svm",
+    "condition":"snr_10db",
+    "n_test_files":300,
+    "accuracy":0.14,
+    "macro_precision":0.1417785235,
+    "macro_recall":0.13125,
+    "macro_f1":0.0414905607,
+    "run_id":"695324b2e90a4af5b72034c5b95f5ebb",
+    "accuracy_delta_vs_clean":-0.33,
+    "macro_f1_delta_vs_clean":-0.4141453833
+  },
+  {
+    "model":"SVM Baseline",
+    "model_key":"svm",
+    "condition":"snr_0db",
+    "n_test_files":300,
+    "accuracy":0.1333333333,
+    "macro_precision":0.0166666667,
+    "macro_recall":0.125,
+    "macro_f1":0.0294117647,
+    "run_id":"695324b2e90a4af5b72034c5b95f5ebb",
+    "accuracy_delta_vs_clean":-0.3366666667,
+    "macro_f1_delta_vs_clean":-0.4262241793
+  }
+]
