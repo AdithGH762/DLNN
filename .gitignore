@@ -9,6 +9,7 @@ data/
 
 # Model artifacts
 models/*.keras
+!models/emotionsense_cnn_lstm.keras
 
 # Generated outputs - explicitly include reviewed evidence
 outputs/*
